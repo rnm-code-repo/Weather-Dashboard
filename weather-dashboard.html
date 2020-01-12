@@ -78,22 +78,22 @@
         }
 
         #Clouds {
-            background: url(http://bestanimations.com/Nature/clouds-flowing-over-lake-mountains-nature-animated-gif.gif)no-repeat center center;
+            background: url(https://bestanimations.com/Nature/clouds-flowing-over-lake-mountains-nature-animated-gif.gif)no-repeat center center;
             background-size: cover;
         }
 
         #Rain {
-            background: url(http://bestanimations.com/Nature/nature-rain-animated-gif-3.gif)no-repeat center center;
+            background: url(https://bestanimations.com/Nature/nature-rain-animated-gif-3.gif)no-repeat center center;
             background-size: cover;
         }
 
         #Clear {
-            background: url(http://bestanimations.com/Nature/nature-waterfall-animated-gif-3.gif)no-repeat center center;
+            background: url(https://bestanimations.com/Nature/nature-waterfall-animated-gif-3.gif)no-repeat center center;
             background-size: cover;
         }
 
         #Snow {
-            background: url(http://bestanimations.com/Nature/snow-animated-gif.gif)no-repeat center center;
+            background: url(https://bestanimations.com/Nature/snow-animated-gif.gif)no-repeat center center;
             background-size: cover;
         }
 
@@ -107,8 +107,8 @@
 </head>
 
 <body onload="geoFindMe(); loadCities();">
-    <h1><img src="http://openweathermap.org/img/wn/02d@2x.png" />Weather Dashboard<img
-            src="http://openweathermap.org/img/wn/10d@2x.png" /></h1>
+    <h1><img src="https://openweathermap.org/img/wn/02d@2x.png" />Weather Dashboard<img
+            src="https://openweathermap.org/img/wn/10d@2x.png" /></h1>
 
 
     <div class="row" style="margin: 10px;">
@@ -222,7 +222,7 @@
                 // http://openweathermap.org/img/wn/10d@2x.png
 
                 apikey = "166a433c57516f51dfab1f7edaed8413";
-                var queryURL2 = "http://api.openweathermap.org/data/2.5/uvi?appid=" + apikey + "&lat=" +
+                var queryURL2 = "https://api.openweathermap.org/data/2.5/uvi?appid=" + apikey + "&lat=" +
                     response.coord.lat + "&lon=" + response.coord.lon;
                 // http://api.openweathermap.org/data/2.5/uvi?appid=166a433c57516f51dfab1f7edaed8413&lat=-71.06&lon=42.36
                 //http:// api.openweathermap.org/data/2.5/forecast?q={city name},{country code}&appid=
@@ -257,7 +257,7 @@
                         5) { // && (new Date(dt).getDate() > curDate)) {
 
 
-                        icon = 'http://openweathermap.org/img/wn/' + wList[x].weather[0].icon + '.png';
+                        icon = 'https://openweathermap.org/img/wn/' + wList[x].weather[0].icon + '.png';
                         if (x === 0 && (new Date(dt).getDate() + 1) === curDate) {
                             //console.log(dt + "<<-->>>>" + new Date(dt).getDate())
                             wObj[dt] = true;
@@ -313,7 +313,7 @@
                 mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
 
                 //mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
-                var queryURL = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=166a433c57516f51dfab1f7edaed8413`;
+                var queryURL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=166a433c57516f51dfab1f7edaed8413`;
                 $.ajax({
                     url: queryURL,
                     method: "GET"
