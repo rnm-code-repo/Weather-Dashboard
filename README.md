@@ -2,7 +2,7 @@
 Dashboard to display weather information based on city search.
 
 # Components and APIs
-**APIs user**
+**APIs used**
 - openweather.org
 - geolocaiton 
 
